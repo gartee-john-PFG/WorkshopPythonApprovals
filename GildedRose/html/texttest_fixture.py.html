@@ -1,0 +1,505 @@
+<html><body><h1>./texttest_fixture.py</h1>Killed 0 out of 45 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 90</h3><pre>--- ./texttest_fixture.py
++++ ./texttest_fixture.py
+@@ -3,7 +3,7 @@
+ 
+ from gilded_rose import *
+ 
+-if __name__ == "__main__":
++if __name__ != "__main__":
+     print ("OMGHAI!")
+     items = [
+              Item(name="+5 Dexterity Vest", sell_in=10, quality=20),
+</pre><h3>Mutant 91</h3><pre>--- ./texttest_fixture.py
++++ ./texttest_fixture.py
+@@ -3,7 +3,7 @@
+ 
+ from gilded_rose import *
+ 
+-if __name__ == "__main__":
++if __name__ == "XX__main__XX":
+     print ("OMGHAI!")
+     items = [
+              Item(name="+5 Dexterity Vest", sell_in=10, quality=20),
+</pre><h3>Mutant 92</h3><pre>--- ./texttest_fixture.py
++++ ./texttest_fixture.py
+@@ -4,7 +4,7 @@
+ from gilded_rose import *
+ 
+ if __name__ == "__main__":
+-    print ("OMGHAI!")
++    print ("XXOMGHAI!XX")
+     items = [
+              Item(name="+5 Dexterity Vest", sell_in=10, quality=20),
+              Item(name="Aged Brie", sell_in=2, quality=0),
+</pre><h3>Mutant 93</h3><pre>--- ./texttest_fixture.py
++++ ./texttest_fixture.py
+@@ -6,7 +6,7 @@
+ if __name__ == "__main__":
+     print ("OMGHAI!")
+     items = [
+-             Item(name="+5 Dexterity Vest", sell_in=10, quality=20),
++             Item(name="XX+5 Dexterity VestXX", sell_in=10, quality=20),
+              Item(name="Aged Brie", sell_in=2, quality=0),
+              Item(name="Elixir of the Mongoose", sell_in=5, quality=7),
+              Item(name="Sulfuras, Hand of Ragnaros", sell_in=0, quality=80),
+</pre><h3>Mutant 94</h3><pre>--- ./texttest_fixture.py
++++ ./texttest_fixture.py
+@@ -6,7 +6,7 @@
+ if __name__ == "__main__":
+     print ("OMGHAI!")
+     items = [
+-             Item(name="+5 Dexterity Vest", sell_in=10, quality=20),
++             Item(name="+5 Dexterity Vest", sell_in=11, quality=20),
+              Item(name="Aged Brie", sell_in=2, quality=0),
+              Item(name="Elixir of the Mongoose", sell_in=5, quality=7),
+              Item(name="Sulfuras, Hand of Ragnaros", sell_in=0, quality=80),
+</pre><h3>Mutant 95</h3><pre>--- ./texttest_fixture.py
++++ ./texttest_fixture.py
+@@ -6,7 +6,7 @@
+ if __name__ == "__main__":
+     print ("OMGHAI!")
+     items = [
+-             Item(name="+5 Dexterity Vest", sell_in=10, quality=20),
++             Item(name="+5 Dexterity Vest", sell_in=10, quality=21),
+              Item(name="Aged Brie", sell_in=2, quality=0),
+              Item(name="Elixir of the Mongoose", sell_in=5, quality=7),
+              Item(name="Sulfuras, Hand of Ragnaros", sell_in=0, quality=80),
+</pre><h3>Mutant 96</h3><pre>--- ./texttest_fixture.py
++++ ./texttest_fixture.py
+@@ -7,7 +7,7 @@
+     print ("OMGHAI!")
+     items = [
+              Item(name="+5 Dexterity Vest", sell_in=10, quality=20),
+-             Item(name="Aged Brie", sell_in=2, quality=0),
++             Item(name="XXAged BrieXX", sell_in=2, quality=0),
+              Item(name="Elixir of the Mongoose", sell_in=5, quality=7),
+              Item(name="Sulfuras, Hand of Ragnaros", sell_in=0, quality=80),
+              Item(name="Sulfuras, Hand of Ragnaros", sell_in=-1, quality=80),
+</pre><h3>Mutant 97</h3><pre>--- ./texttest_fixture.py
++++ ./texttest_fixture.py
+@@ -7,7 +7,7 @@
+     print ("OMGHAI!")
+     items = [
+              Item(name="+5 Dexterity Vest", sell_in=10, quality=20),
+-             Item(name="Aged Brie", sell_in=2, quality=0),
++             Item(name="Aged Brie", sell_in=3, quality=0),
+              Item(name="Elixir of the Mongoose", sell_in=5, quality=7),
+              Item(name="Sulfuras, Hand of Ragnaros", sell_in=0, quality=80),
+              Item(name="Sulfuras, Hand of Ragnaros", sell_in=-1, quality=80),
+</pre><h3>Mutant 98</h3><pre>--- ./texttest_fixture.py
++++ ./texttest_fixture.py
+@@ -7,7 +7,7 @@
+     print ("OMGHAI!")
+     items = [
+              Item(name="+5 Dexterity Vest", sell_in=10, quality=20),
+-             Item(name="Aged Brie", sell_in=2, quality=0),
++             Item(name="Aged Brie", sell_in=2, quality=1),
+              Item(name="Elixir of the Mongoose", sell_in=5, quality=7),
+              Item(name="Sulfuras, Hand of Ragnaros", sell_in=0, quality=80),
+              Item(name="Sulfuras, Hand of Ragnaros", sell_in=-1, quality=80),
+</pre><h3>Mutant 99</h3><pre>--- ./texttest_fixture.py
++++ ./texttest_fixture.py
+@@ -8,7 +8,7 @@
+     items = [
+              Item(name="+5 Dexterity Vest", sell_in=10, quality=20),
+              Item(name="Aged Brie", sell_in=2, quality=0),
+-             Item(name="Elixir of the Mongoose", sell_in=5, quality=7),
++             Item(name="XXElixir of the MongooseXX", sell_in=5, quality=7),
+              Item(name="Sulfuras, Hand of Ragnaros", sell_in=0, quality=80),
+              Item(name="Sulfuras, Hand of Ragnaros", sell_in=-1, quality=80),
+              Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=15, quality=20),
+</pre><h3>Mutant 100</h3><pre>--- ./texttest_fixture.py
++++ ./texttest_fixture.py
+@@ -8,7 +8,7 @@
+     items = [
+              Item(name="+5 Dexterity Vest", sell_in=10, quality=20),
+              Item(name="Aged Brie", sell_in=2, quality=0),
+-             Item(name="Elixir of the Mongoose", sell_in=5, quality=7),
++             Item(name="Elixir of the Mongoose", sell_in=6, quality=7),
+              Item(name="Sulfuras, Hand of Ragnaros", sell_in=0, quality=80),
+              Item(name="Sulfuras, Hand of Ragnaros", sell_in=-1, quality=80),
+              Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=15, quality=20),
+</pre><h3>Mutant 101</h3><pre>--- ./texttest_fixture.py
++++ ./texttest_fixture.py
+@@ -8,7 +8,7 @@
+     items = [
+              Item(name="+5 Dexterity Vest", sell_in=10, quality=20),
+              Item(name="Aged Brie", sell_in=2, quality=0),
+-             Item(name="Elixir of the Mongoose", sell_in=5, quality=7),
++             Item(name="Elixir of the Mongoose", sell_in=5, quality=8),
+              Item(name="Sulfuras, Hand of Ragnaros", sell_in=0, quality=80),
+              Item(name="Sulfuras, Hand of Ragnaros", sell_in=-1, quality=80),
+              Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=15, quality=20),
+</pre><h3>Mutant 102</h3><pre>--- ./texttest_fixture.py
++++ ./texttest_fixture.py
+@@ -9,7 +9,7 @@
+              Item(name="+5 Dexterity Vest", sell_in=10, quality=20),
+              Item(name="Aged Brie", sell_in=2, quality=0),
+              Item(name="Elixir of the Mongoose", sell_in=5, quality=7),
+-             Item(name="Sulfuras, Hand of Ragnaros", sell_in=0, quality=80),
++             Item(name="XXSulfuras, Hand of RagnarosXX", sell_in=0, quality=80),
+              Item(name="Sulfuras, Hand of Ragnaros", sell_in=-1, quality=80),
+              Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=15, quality=20),
+              Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=10, quality=49),
+</pre><h3>Mutant 103</h3><pre>--- ./texttest_fixture.py
++++ ./texttest_fixture.py
+@@ -9,7 +9,7 @@
+              Item(name="+5 Dexterity Vest", sell_in=10, quality=20),
+              Item(name="Aged Brie", sell_in=2, quality=0),
+              Item(name="Elixir of the Mongoose", sell_in=5, quality=7),
+-             Item(name="Sulfuras, Hand of Ragnaros", sell_in=0, quality=80),
++             Item(name="Sulfuras, Hand of Ragnaros", sell_in=1, quality=80),
+              Item(name="Sulfuras, Hand of Ragnaros", sell_in=-1, quality=80),
+              Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=15, quality=20),
+              Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=10, quality=49),
+</pre><h3>Mutant 104</h3><pre>--- ./texttest_fixture.py
++++ ./texttest_fixture.py
+@@ -9,7 +9,7 @@
+              Item(name="+5 Dexterity Vest", sell_in=10, quality=20),
+              Item(name="Aged Brie", sell_in=2, quality=0),
+              Item(name="Elixir of the Mongoose", sell_in=5, quality=7),
+-             Item(name="Sulfuras, Hand of Ragnaros", sell_in=0, quality=80),
++             Item(name="Sulfuras, Hand of Ragnaros", sell_in=0, quality=81),
+              Item(name="Sulfuras, Hand of Ragnaros", sell_in=-1, quality=80),
+              Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=15, quality=20),
+              Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=10, quality=49),
+</pre><h3>Mutant 105</h3><pre>--- ./texttest_fixture.py
++++ ./texttest_fixture.py
+@@ -10,7 +10,7 @@
+              Item(name="Aged Brie", sell_in=2, quality=0),
+              Item(name="Elixir of the Mongoose", sell_in=5, quality=7),
+              Item(name="Sulfuras, Hand of Ragnaros", sell_in=0, quality=80),
+-             Item(name="Sulfuras, Hand of Ragnaros", sell_in=-1, quality=80),
++             Item(name="XXSulfuras, Hand of RagnarosXX", sell_in=-1, quality=80),
+              Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=15, quality=20),
+              Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=10, quality=49),
+              Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=5, quality=49),
+</pre><h3>Mutant 106</h3><pre>--- ./texttest_fixture.py
++++ ./texttest_fixture.py
+@@ -10,7 +10,7 @@
+              Item(name="Aged Brie", sell_in=2, quality=0),
+              Item(name="Elixir of the Mongoose", sell_in=5, quality=7),
+              Item(name="Sulfuras, Hand of Ragnaros", sell_in=0, quality=80),
+-             Item(name="Sulfuras, Hand of Ragnaros", sell_in=-1, quality=80),
++             Item(name="Sulfuras, Hand of Ragnaros", sell_in=+1, quality=80),
+              Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=15, quality=20),
+              Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=10, quality=49),
+              Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=5, quality=49),
+</pre><h3>Mutant 107</h3><pre>--- ./texttest_fixture.py
++++ ./texttest_fixture.py
+@@ -10,7 +10,7 @@
+              Item(name="Aged Brie", sell_in=2, quality=0),
+              Item(name="Elixir of the Mongoose", sell_in=5, quality=7),
+              Item(name="Sulfuras, Hand of Ragnaros", sell_in=0, quality=80),
+-             Item(name="Sulfuras, Hand of Ragnaros", sell_in=-1, quality=80),
++             Item(name="Sulfuras, Hand of Ragnaros", sell_in=-2, quality=80),
+              Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=15, quality=20),
+              Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=10, quality=49),
+              Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=5, quality=49),
+</pre><h3>Mutant 108</h3><pre>--- ./texttest_fixture.py
++++ ./texttest_fixture.py
+@@ -10,7 +10,7 @@
+              Item(name="Aged Brie", sell_in=2, quality=0),
+              Item(name="Elixir of the Mongoose", sell_in=5, quality=7),
+              Item(name="Sulfuras, Hand of Ragnaros", sell_in=0, quality=80),
+-             Item(name="Sulfuras, Hand of Ragnaros", sell_in=-1, quality=80),
++             Item(name="Sulfuras, Hand of Ragnaros", sell_in=-1, quality=81),
+              Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=15, quality=20),
+              Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=10, quality=49),
+              Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=5, quality=49),
+</pre><h3>Mutant 109</h3><pre>--- ./texttest_fixture.py
++++ ./texttest_fixture.py
+@@ -11,7 +11,7 @@
+              Item(name="Elixir of the Mongoose", sell_in=5, quality=7),
+              Item(name="Sulfuras, Hand of Ragnaros", sell_in=0, quality=80),
+              Item(name="Sulfuras, Hand of Ragnaros", sell_in=-1, quality=80),
+-             Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=15, quality=20),
++             Item(name="XXBackstage passes to a TAFKAL80ETC concertXX", sell_in=15, quality=20),
+              Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=10, quality=49),
+              Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=5, quality=49),
+              Item(name="Conjured Mana Cake", sell_in=3, quality=6),  # <-- :O
+</pre><h3>Mutant 110</h3><pre>--- ./texttest_fixture.py
++++ ./texttest_fixture.py
+@@ -11,7 +11,7 @@
+              Item(name="Elixir of the Mongoose", sell_in=5, quality=7),
+              Item(name="Sulfuras, Hand of Ragnaros", sell_in=0, quality=80),
+              Item(name="Sulfuras, Hand of Ragnaros", sell_in=-1, quality=80),
+-             Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=15, quality=20),
++             Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=16, quality=20),
+              Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=10, quality=49),
+              Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=5, quality=49),
+              Item(name="Conjured Mana Cake", sell_in=3, quality=6),  # <-- :O
+</pre><h3>Mutant 111</h3><pre>--- ./texttest_fixture.py
++++ ./texttest_fixture.py
+@@ -11,7 +11,7 @@
+              Item(name="Elixir of the Mongoose", sell_in=5, quality=7),
+              Item(name="Sulfuras, Hand of Ragnaros", sell_in=0, quality=80),
+              Item(name="Sulfuras, Hand of Ragnaros", sell_in=-1, quality=80),
+-             Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=15, quality=20),
++             Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=15, quality=21),
+              Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=10, quality=49),
+              Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=5, quality=49),
+              Item(name="Conjured Mana Cake", sell_in=3, quality=6),  # <-- :O
+</pre><h3>Mutant 112</h3><pre>--- ./texttest_fixture.py
++++ ./texttest_fixture.py
+@@ -12,7 +12,7 @@
+              Item(name="Sulfuras, Hand of Ragnaros", sell_in=0, quality=80),
+              Item(name="Sulfuras, Hand of Ragnaros", sell_in=-1, quality=80),
+              Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=15, quality=20),
+-             Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=10, quality=49),
++             Item(name="XXBackstage passes to a TAFKAL80ETC concertXX", sell_in=10, quality=49),
+              Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=5, quality=49),
+              Item(name="Conjured Mana Cake", sell_in=3, quality=6),  # <-- :O
+             ]
+</pre><h3>Mutant 113</h3><pre>--- ./texttest_fixture.py
++++ ./texttest_fixture.py
+@@ -12,7 +12,7 @@
+              Item(name="Sulfuras, Hand of Ragnaros", sell_in=0, quality=80),
+              Item(name="Sulfuras, Hand of Ragnaros", sell_in=-1, quality=80),
+              Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=15, quality=20),
+-             Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=10, quality=49),
++             Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=11, quality=49),
+              Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=5, quality=49),
+              Item(name="Conjured Mana Cake", sell_in=3, quality=6),  # <-- :O
+             ]
+</pre><h3>Mutant 114</h3><pre>--- ./texttest_fixture.py
++++ ./texttest_fixture.py
+@@ -12,7 +12,7 @@
+              Item(name="Sulfuras, Hand of Ragnaros", sell_in=0, quality=80),
+              Item(name="Sulfuras, Hand of Ragnaros", sell_in=-1, quality=80),
+              Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=15, quality=20),
+-             Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=10, quality=49),
++             Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=10, quality=50),
+              Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=5, quality=49),
+              Item(name="Conjured Mana Cake", sell_in=3, quality=6),  # <-- :O
+             ]
+</pre><h3>Mutant 115</h3><pre>--- ./texttest_fixture.py
++++ ./texttest_fixture.py
+@@ -13,7 +13,7 @@
+              Item(name="Sulfuras, Hand of Ragnaros", sell_in=-1, quality=80),
+              Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=15, quality=20),
+              Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=10, quality=49),
+-             Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=5, quality=49),
++             Item(name="XXBackstage passes to a TAFKAL80ETC concertXX", sell_in=5, quality=49),
+              Item(name="Conjured Mana Cake", sell_in=3, quality=6),  # <-- :O
+             ]
+ 
+</pre><h3>Mutant 116</h3><pre>--- ./texttest_fixture.py
++++ ./texttest_fixture.py
+@@ -13,7 +13,7 @@
+              Item(name="Sulfuras, Hand of Ragnaros", sell_in=-1, quality=80),
+              Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=15, quality=20),
+              Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=10, quality=49),
+-             Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=5, quality=49),
++             Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=6, quality=49),
+              Item(name="Conjured Mana Cake", sell_in=3, quality=6),  # <-- :O
+             ]
+ 
+</pre><h3>Mutant 117</h3><pre>--- ./texttest_fixture.py
++++ ./texttest_fixture.py
+@@ -13,7 +13,7 @@
+              Item(name="Sulfuras, Hand of Ragnaros", sell_in=-1, quality=80),
+              Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=15, quality=20),
+              Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=10, quality=49),
+-             Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=5, quality=49),
++             Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=5, quality=50),
+              Item(name="Conjured Mana Cake", sell_in=3, quality=6),  # <-- :O
+             ]
+ 
+</pre><h3>Mutant 118</h3><pre>--- ./texttest_fixture.py
++++ ./texttest_fixture.py
+@@ -14,7 +14,7 @@
+              Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=15, quality=20),
+              Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=10, quality=49),
+              Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=5, quality=49),
+-             Item(name="Conjured Mana Cake", sell_in=3, quality=6),  # <-- :O
++             Item(name="XXConjured Mana CakeXX", sell_in=3, quality=6),  # <-- :O
+             ]
+ 
+     days = 2
+</pre><h3>Mutant 119</h3><pre>--- ./texttest_fixture.py
++++ ./texttest_fixture.py
+@@ -14,7 +14,7 @@
+              Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=15, quality=20),
+              Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=10, quality=49),
+              Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=5, quality=49),
+-             Item(name="Conjured Mana Cake", sell_in=3, quality=6),  # <-- :O
++             Item(name="Conjured Mana Cake", sell_in=4, quality=6),  # <-- :O
+             ]
+ 
+     days = 2
+</pre><h3>Mutant 120</h3><pre>--- ./texttest_fixture.py
++++ ./texttest_fixture.py
+@@ -14,7 +14,7 @@
+              Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=15, quality=20),
+              Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=10, quality=49),
+              Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=5, quality=49),
+-             Item(name="Conjured Mana Cake", sell_in=3, quality=6),  # <-- :O
++             Item(name="Conjured Mana Cake", sell_in=3, quality=7),  # <-- :O
+             ]
+ 
+     days = 2
+</pre><h3>Mutant 121</h3><pre>--- ./texttest_fixture.py
++++ ./texttest_fixture.py
+@@ -5,17 +5,7 @@
+ 
+ if __name__ == "__main__":
+     print ("OMGHAI!")
+-    items = [
+-             Item(name="+5 Dexterity Vest", sell_in=10, quality=20),
+-             Item(name="Aged Brie", sell_in=2, quality=0),
+-             Item(name="Elixir of the Mongoose", sell_in=5, quality=7),
+-             Item(name="Sulfuras, Hand of Ragnaros", sell_in=0, quality=80),
+-             Item(name="Sulfuras, Hand of Ragnaros", sell_in=-1, quality=80),
+-             Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=15, quality=20),
+-             Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=10, quality=49),
+-             Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=5, quality=49),
+-             Item(name="Conjured Mana Cake", sell_in=3, quality=6),  # <-- :O
+-            ]
++    items = None
+ 
+     days = 2
+     import sys
+</pre><h3>Mutant 122</h3><pre>--- ./texttest_fixture.py
++++ ./texttest_fixture.py
+@@ -17,7 +17,7 @@
+              Item(name="Conjured Mana Cake", sell_in=3, quality=6),  # <-- :O
+             ]
+ 
+-    days = 2
++    days = 3
+     import sys
+     if len(sys.argv) > 1:
+         days = int(sys.argv[1]) + 1
+</pre><h3>Mutant 123</h3><pre>--- ./texttest_fixture.py
++++ ./texttest_fixture.py
+@@ -17,7 +17,7 @@
+              Item(name="Conjured Mana Cake", sell_in=3, quality=6),  # <-- :O
+             ]
+ 
+-    days = 2
++    days = None
+     import sys
+     if len(sys.argv) > 1:
+         days = int(sys.argv[1]) + 1
+</pre><h3>Mutant 124</h3><pre>--- ./texttest_fixture.py
++++ ./texttest_fixture.py
+@@ -19,7 +19,7 @@
+ 
+     days = 2
+     import sys
+-    if len(sys.argv) > 1:
++    if len(sys.argv) >= 1:
+         days = int(sys.argv[1]) + 1
+     for day in range(days):
+         print("-------- day %s --------" % day)
+</pre><h3>Mutant 125</h3><pre>--- ./texttest_fixture.py
++++ ./texttest_fixture.py
+@@ -19,7 +19,7 @@
+ 
+     days = 2
+     import sys
+-    if len(sys.argv) > 1:
++    if len(sys.argv) > 2:
+         days = int(sys.argv[1]) + 1
+     for day in range(days):
+         print("-------- day %s --------" % day)
+</pre><h3>Mutant 126</h3><pre>--- ./texttest_fixture.py
++++ ./texttest_fixture.py
+@@ -20,7 +20,7 @@
+     days = 2
+     import sys
+     if len(sys.argv) > 1:
+-        days = int(sys.argv[1]) + 1
++        days = int(sys.argv[2]) + 1
+     for day in range(days):
+         print("-------- day %s --------" % day)
+         print("name, sellIn, quality")
+</pre><h3>Mutant 127</h3><pre>--- ./texttest_fixture.py
++++ ./texttest_fixture.py
+@@ -20,7 +20,7 @@
+     days = 2
+     import sys
+     if len(sys.argv) > 1:
+-        days = int(sys.argv[1]) + 1
++        days = int(sys.argv[1]) - 1
+     for day in range(days):
+         print("-------- day %s --------" % day)
+         print("name, sellIn, quality")
+</pre><h3>Mutant 128</h3><pre>--- ./texttest_fixture.py
++++ ./texttest_fixture.py
+@@ -20,7 +20,7 @@
+     days = 2
+     import sys
+     if len(sys.argv) > 1:
+-        days = int(sys.argv[1]) + 1
++        days = int(sys.argv[1]) + 2
+     for day in range(days):
+         print("-------- day %s --------" % day)
+         print("name, sellIn, quality")
+</pre><h3>Mutant 129</h3><pre>--- ./texttest_fixture.py
++++ ./texttest_fixture.py
+@@ -20,7 +20,7 @@
+     days = 2
+     import sys
+     if len(sys.argv) > 1:
+-        days = int(sys.argv[1]) + 1
++        days = None
+     for day in range(days):
+         print("-------- day %s --------" % day)
+         print("name, sellIn, quality")
+</pre><h3>Mutant 130</h3><pre>--- ./texttest_fixture.py
++++ ./texttest_fixture.py
+@@ -22,7 +22,7 @@
+     if len(sys.argv) > 1:
+         days = int(sys.argv[1]) + 1
+     for day in range(days):
+-        print("-------- day %s --------" % day)
++        print("XX-------- day %s --------XX" % day)
+         print("name, sellIn, quality")
+         for item in items:
+             print(item)
+</pre><h3>Mutant 131</h3><pre>--- ./texttest_fixture.py
++++ ./texttest_fixture.py
+@@ -22,7 +22,7 @@
+     if len(sys.argv) > 1:
+         days = int(sys.argv[1]) + 1
+     for day in range(days):
+-        print("-------- day %s --------" % day)
++        print("-------- day %s --------" / day)
+         print("name, sellIn, quality")
+         for item in items:
+             print(item)
+</pre><h3>Mutant 132</h3><pre>--- ./texttest_fixture.py
++++ ./texttest_fixture.py
+@@ -23,7 +23,7 @@
+         days = int(sys.argv[1]) + 1
+     for day in range(days):
+         print("-------- day %s --------" % day)
+-        print("name, sellIn, quality")
++        print("XXname, sellIn, qualityXX")
+         for item in items:
+             print(item)
+         print("")
+</pre><h3>Mutant 133</h3><pre>--- ./texttest_fixture.py
++++ ./texttest_fixture.py
+@@ -25,7 +25,7 @@
+         print("-------- day %s --------" % day)
+         print("name, sellIn, quality")
+         for item in items:
+-            print(item)
++            print(None)
+         print("")
+         GildedRose(items).update_quality()
+ 
+</pre><h3>Mutant 134</h3><pre>--- ./texttest_fixture.py
++++ ./texttest_fixture.py
+@@ -26,6 +26,6 @@
+         print("name, sellIn, quality")
+         for item in items:
+             print(item)
+-        print("")
++        print("XXXX")
+         GildedRose(items).update_quality()
+ 
+</pre></body></html>

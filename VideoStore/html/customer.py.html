@@ -1,0 +1,89 @@
+<html><body><h1>./customer.py</h1>Killed 79 out of 87 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 16</h3><pre>--- ./customer.py
++++ ./customer.py
+@@ -21,7 +21,7 @@
+             # determine amounts for each line
+ 
+             if each.getMovie().getPriceCode() == Movie.REGULAR:
+-                total_amount += 2
++                total_amount = 2
+                 if each.getDaysRented() > 2:
+                     this_amount += (each.getDaysRented() - 2) * 1.5
+             elif each.getMovie().getPriceCode() == Movie.NEW_RELEASE:
+</pre><h3>Mutant 21</h3><pre>--- ./customer.py
++++ ./customer.py
+@@ -23,7 +23,7 @@
+             if each.getMovie().getPriceCode() == Movie.REGULAR:
+                 total_amount += 2
+                 if each.getDaysRented() > 2:
+-                    this_amount += (each.getDaysRented() - 2) * 1.5
++                    this_amount = (each.getDaysRented() - 2) * 1.5
+             elif each.getMovie().getPriceCode() == Movie.NEW_RELEASE:
+                     total_amount += each.getDaysRented() * 3
+             elif each.getMovie().getPriceCode() ==  Movie.CHILDRENS:
+</pre><h3>Mutant 28</h3><pre>--- ./customer.py
++++ ./customer.py
+@@ -25,7 +25,7 @@
+                 if each.getDaysRented() > 2:
+                     this_amount += (each.getDaysRented() - 2) * 1.5
+             elif each.getMovie().getPriceCode() == Movie.NEW_RELEASE:
+-                    total_amount += each.getDaysRented() * 3
++                    total_amount = each.getDaysRented() * 3
+             elif each.getMovie().getPriceCode() ==  Movie.CHILDRENS:
+                     total_amount += 1.5
+                     if (each.getDaysRented() > 3):
+</pre><h3>Mutant 33</h3><pre>--- ./customer.py
++++ ./customer.py
+@@ -27,7 +27,7 @@
+             elif each.getMovie().getPriceCode() == Movie.NEW_RELEASE:
+                     total_amount += each.getDaysRented() * 3
+             elif each.getMovie().getPriceCode() ==  Movie.CHILDRENS:
+-                    total_amount += 1.5
++                    total_amount = 1.5
+                     if (each.getDaysRented() > 3):
+                         this_amount += (each.getDaysRented() - 3) * 1.5
+             
+</pre><h3>Mutant 38</h3><pre>--- ./customer.py
++++ ./customer.py
+@@ -29,7 +29,7 @@
+             elif each.getMovie().getPriceCode() ==  Movie.CHILDRENS:
+                     total_amount += 1.5
+                     if (each.getDaysRented() > 3):
+-                        this_amount += (each.getDaysRented() - 3) * 1.5
++                        this_amount = (each.getDaysRented() - 3) * 1.5
+             
+ 
+             frequent_renter_points += 1
+</pre><h3>Mutant 44</h3><pre>--- ./customer.py
++++ ./customer.py
+@@ -32,7 +32,7 @@
+                         this_amount += (each.getDaysRented() - 3) * 1.5
+             
+ 
+-            frequent_renter_points += 1
++            frequent_renter_points = 1
+ 
+             if each.getMovie().getPriceCode() == Movie.NEW_RELEASE and each.getDaysRented() > 1:
+                 frequent_renter_points += 1
+</pre><h3>Mutant 48</h3><pre>--- ./customer.py
++++ ./customer.py
+@@ -34,7 +34,7 @@
+ 
+             frequent_renter_points += 1
+ 
+-            if each.getMovie().getPriceCode() == Movie.NEW_RELEASE and each.getDaysRented() > 1:
++            if each.getMovie().getPriceCode() == Movie.NEW_RELEASE and each.getDaysRented() >= 1:
+                 frequent_renter_points += 1
+ 
+             result += "\t" + each.getMovie().getTitle() + "\t" +  str(this_amount) + "\n"
+</pre><h3>Mutant 85</h3><pre>--- ./customer.py
++++ ./customer.py
+@@ -58,7 +58,7 @@
+         return self.priceCode
+ 
+     def setPriceCode(self, arg):
+-        self.priceCode = arg
++        self.priceCode = None
+ 
+     def getTitle (self):
+         return self.title
+</pre></body></html>

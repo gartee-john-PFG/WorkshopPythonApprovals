@@ -1,0 +1,23 @@
+<html><body><h1>./item.py</h1>Killed 3 out of 5 mutants<h2>Survived</h2>Survived mutation testing. These mutants show holes in your test suite.<h3>Mutant 88</h3><pre>--- ./item.py
++++ ./item.py
+@@ -5,7 +5,7 @@
+         self.quality = quality
+ 
+     def __repr__(self):
+-        return "%s, %s, %s" % (self.name, self.sell_in, self.quality)
++        return "XX%s, %s, %sXX" % (self.name, self.sell_in, self.quality)
+     
+     def __str__(self):
+         return f'Item: name - {self.name}, sell_in - {self.sell_in}, quality - {self.quality}'
+</pre><h3>Mutant 89</h3><pre>--- ./item.py
++++ ./item.py
+@@ -5,7 +5,7 @@
+         self.quality = quality
+ 
+     def __repr__(self):
+-        return "%s, %s, %s" % (self.name, self.sell_in, self.quality)
++        return "%s, %s, %s" / (self.name, self.sell_in, self.quality)
+     
+     def __str__(self):
+         return f'Item: name - {self.name}, sell_in - {self.sell_in}, quality - {self.quality}'
+</pre></body></html>

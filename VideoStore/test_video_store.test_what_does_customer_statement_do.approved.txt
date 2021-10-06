@@ -1,0 +1,4 @@
+Rental Record for John Gartee
+	Star Wars	0
+Amount owed is 9
+You earned 2 frequent renter points
